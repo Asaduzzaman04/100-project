@@ -29,9 +29,9 @@
             <!-- =====><search-section> <===== -->
             <section class="flex gap-3  ">
                 <input type="text" spellcheck="false" id="search" placeholder="Enter city name"
-                    class="rounded-full bg-[#F6F5F5] px-3 py-2 hover:shadow-basic transition-all duration-300 border-none outline-none  ">
+                    class="rounded-full bg-[#F6F5F5] px-3 py-2 hover:shadow-basic transition-all duration-300 border-none outline-none  text-[#021526] capitalize">
                 <label for="search"
-                    class=" bg-[#F6F5F5] px-3 py-2 rounded-full hover:shadow-basic transition-all duration-300"><img
+                    class=" bg-[#F6F5F5] px-3 py-2 rounded-full hover:shadow-basic transition-all duration-300" id="searchBtn"><img
                         src="./images/search.png" class="w-6"></label>
             </section>
             <!-- =====> </search-section> <===== -->
@@ -40,29 +40,29 @@
 
                 <!-- =====> <weather-image-section> <===== -->
 
-                <div class="weather-img mt-5">
-                    <img src="./images/rain.png" class="w-36">
+                <div class="weather-img mt-5" >
+                    <img src="./images/clear.png" class="w-36  drop-shadow-2xl"  id="img">
                 </div>
                 <!-- =====> temp-section <===== -->
                 <div class="temp text-center mt-1  font-semibold capitalize">
-                    <p class="text-[3rem]">29°c</p>
-                    <p class="text-[2rem]">chittagong</p>
+                    <p class="text-[3rem]" id="temp"></p>
+                    <p class="text-[2rem]" id="city"></p>
                 </div>
                 <!-- =====>wind/humadity <===== -->
                 <div class="situation mt-5 flex gap-9 ">
                     <!-- =====>humadity-section <===== -->
                     <div class="flex gap-2  font-bold capitalize"> 
-                        <img src="./images/humidity.png" class="w-10 h-10">
+                        <img src="./images/humidity.png" class="w-10 h-10" >
                         <div>
-                            <p>87%</p>
+                            <p id="humidityPer"></p>
                             <p>humidity</p>
                         </div>
                     </div>
                     <!-- =====>wind-section<===== -->
-                    <div class="flex gap-2  font-bold capitalize">
+                    <div class="flex gap-2  font-bold ">
                         	<img src="./images/wind.png" class="w-10 h-10">
                             <div>
-                                <p>14 km/h</p>
+                                <p id="windSpeed"></p>
                                 <p>wind-speed</p>
                             </div>
                     </div>
