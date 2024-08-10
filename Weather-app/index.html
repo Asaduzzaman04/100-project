@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/clouds.png" type="image/x-icon">
     <!-- ======> css <===== -->
 
-     <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./input.css">
 
-     <!-- =====>gogle-font <===== -->
+    <!-- =====>gogle-font <===== -->
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <title>Weather-app</title>
 
 </head>
-<body>
-    <!-- =====> <script file link> <===== -->
-    <script type="module" src="./script.js"></script> 
 
+<body class="bg-[#021526] text-[#F5EDED]">
+    <!-- =====>main-contaier <===== -->
+    <div class="container  h-[100vh] w-[100%] flex justify-center items-center">
+        <div
+            class="weather-container  bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-auto w-[25%] rounded-lg p-10">
+            <!-- =====><search-section> <===== -->
+            <section class="flex gap-3  ">
+                <input type="text" spellcheck="false" id="search" placeholder="Enter city name"
+                    class="rounded-full bg-[#F6F5F5] px-3 py-2 hover:shadow-basic transition-all duration-300 border-none outline-none  ">
+                <label for="search"
+                    class=" bg-[#F6F5F5] px-3 py-2 rounded-full hover:shadow-basic transition-all duration-300"><img
+                        src="./images/search.png" class="w-6"></label>
+            </section>
+            <!-- =====> </search-section> <===== -->
+            <!-- =====> </weather-section> <====== -->
+            <section class="weather flex flex-col justify-center items-center">
+
+                <!-- =====> <weather-image-section> <===== -->
+
+                <div class="weather-img mt-5">
+                    <img src="./images/rain.png" class="w-36">
+                </div>
+                <!-- =====> temp-section <===== -->
+                <div class="temp text-center mt-1  font-semibold capitalize">
+                    <p class="text-[3rem]">29°c</p>
+                    <p class="text-[2rem]">chittagong</p>
+                </div>
+                <!-- =====>wind/humadity <===== -->
+                <div class="situation mt-5 flex gap-9 ">
+                    <!-- =====>humadity-section <===== -->
+                    <div class="flex gap-2  font-bold capitalize"> 
+                        <img src="./images/humidity.png" class="w-10 h-10">
+                        <div>
+                            <p>87%</p>
+                            <p>humidity</p>
+                        </div>
+                    </div>
+                    <!-- =====>wind-section<===== -->
+                    <div class="flex gap-2  font-bold capitalize">
+                        	<img src="./images/wind.png" class="w-10 h-10">
+                            <div>
+                                <p>14 km/h</p>
+                                <p>wind-speed</p>
+                            </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- =====> </weather-section> <====== -->
+        </div>
+    </div>
+
+    <!-- =====> <script file link> <===== -->
+    <script type="module" src="./script.js"></script>
 </body>
+
 </html>
