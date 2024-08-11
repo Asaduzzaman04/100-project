@@ -3,4 +3,14 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: "Lobster", sans-serif;
+    color: #F5EDED;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color:#2b1b61;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
 }
