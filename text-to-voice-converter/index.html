@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =====> css <===== -->
+     <link rel="stylesheet" href="./style.css">
+
+    <title>Text To Voice</title>
+</head>
+<body>
+    <!-- =====> main container <===== -->
+     <div class="container">
+    <!-- =====>main-section<===== -->
+     <div class="main">
+                <!-- =====>heading <===== -->
+                <h2 class="heading">Text to Speech</h2>
+                <!-- =====>text-area<===== -->
+                 <div class="textarea">
+                    <p>Enter Text</p>
+                    <textarea id="text" spellcheck="true"  rows="4" cols="25" >
+                    </textarea>
+                 </div>
+                 <!-- =====>output<===== -->
+                  <div class="output">
+                    <p id="voice-speech">Select Voice</p>
+
+                    <!-- =====>button-voice<===== -->
+                     <button id="voice-btn">convert to Speech</button>
+                  </div>
+     </div>
+     </div>
+     <!-- =====>script-file-link<===== -->
+      <script type="module" src="./script.js"></script>
+</body>
+</html>
