@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/postman-original.svg" type="image/x-icon">
+    <title>Jitu | Portfolio | Card</title>
+    <link rel="stylesheet" href="./input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="font-poppins bg-body-image h-[100vh] w-full flex justify-center items-center text-center ">
+    <div id="main-container" class="shadow-2xl  bg-[#ccdddf] rounded-lg h-[90%] w-[90%] md:h-[60%] md:w-[50%] lg:h-[60%] lg:w-[30%] xl:w-[20%] xl:h-[70%]  overflow-hidden">
+        <!-- -----profile-cover-image----- -->
+        <div class="profile-cover h-[30%] w-full  bg-[url('./image/cover-image.jpg')] bg-no-repeat bg-cover" >
+        </div>
+        <!-- -----profile-info----- -->
+        <div  class="intro-section flex flex-col justify-center items-center">
+            <div id="profile-image" class="rounded-full w-[40%] -translate-y-16 border-[5px] border-[#54a0ff]"  >
+                    <img src="./image/profile-image.jpg"  class="rounded-full">
+            </div>
+
+            <div id="intro-text" class=" -translate-y-5 w-full  font-bold capitalize overflow-hidden flex justify-center items-center flex-col gap-5 px-[2%] md:px-[3%]">
+                <h1 id="profile-name" class="text-3xl">Shohidul islam jitu</h1>
+                <p id="profile-bio">Creative mind with a passion for innovation, always eager to connect and explore new ideas.</p>
+            </div>
+
+            <div id="social-links" class="bg-[#dfdfdf] rounded-3xl w-[90%] py-4  flex justify-center items-center shadow-xl ">
+                <ul class="flex justify-end items-center gap-16 text-3xl  ">
+                    <a href="https://www.facebook.com/share/Ue42GmX2xkGpugkr/?mibextid=qi2Omg"  target="_blank" class="transition-all duration-500 ease-linear hover:-translate-y-3 "><li ><i class='bx bxl-facebook rounded-full p-1.5 text-white  bg-[#3b5998] '></i></li></a>
+
+                    <a href="https://www.tiktok.com/@shohidalminas0?_t=8pKlhwZyrOU&_r=1" target="_blank" class="transition-all duration-500 ease-linear hover:-translate-y-3"><li><i class='bx bxl-tiktok rounded-full p-1.5 text-white  bg-[#333] '></i></li></a>
+
+                    <a href="https://www.instagram.com/m_i_n_a_s_jitu_?igsh=MXFvcHR1eTM2dXlxYg=="    target="_blank" class="transition-all duration-500 ease-linear hover:-translate-y-3"><li><i class='bx bxl-instagram rounded-full p-1.5 text-white  bg-[#c13584]'></i></li></a>
+                </ul>
+            </div>
+
+
+            <div id="toggle-btn" class="mt-5">
+                <label id="mode-toggle" class="relative inline-flex items-center cursor-pointer">
+                  <input id="checkbox" class="sr-only peer" value="" type="checkbox" />
+                  <div
+                    class="w-16 h-10 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️'] before:absolute before:h-8  before:w-8 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400 peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌙'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[4px] after:right-1 after:translate-y-full after:w-8 after:h-8 after:opacity-0 after:transition-all after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-[360deg] peer-checked:after:translate-y-0"
+                  ></div>
+                </label>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+       
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

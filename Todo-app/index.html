@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- =====>css <===== -->
-     <link rel="stylesheet" href="./input.css"> 
-     <!-- =====>google-font<===== -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-     
+    <link rel="stylesheet" href="./input.css">
+    <!-- =====>google-font<===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <!-- =====> box-icon <===== -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Todo-app</title>
+
 </head>
-<body>
-    
+
+<body class="w-[100%] h-[100vh]  bg-[#061018] flex justify-center items-center text-[#F7EFE5] font-poppins">
+
+    <div class="todo-container flex flex-col justify-center items-center  bg-[#792c55] px-20 py-10 rounded-md">
+        <!-- Todo content will go here -->
+        <div class="todo-header text-center">
+            <h1 class="capitalize font-bold text-2xl">Todo app 📋</h1>
+
+            <div class="input-section  mt-5 p-2 relative">
+
+                <input type="text" autofocus placeholder="write your task"
+                    class="todo-input focus:outline-none py-1.5 rounded-full pl-2 text-[#000] font-semibold shadow-inpShadow"
+                    id="input">
+                <button id="todd-btn"
+                    class="add-todo-btn bg-[#ce5f04] px-3 py-1.5 rounded-full font-bold absolute top-2 right-1.5">Add</button>
+            </div>
+        </div>
+        <!-- task-list-goes-here -->
+        <div class=" mt-2">
+            <ul class="my-2 px-5" id="ul">
+                
+            </ul>
+        </div>
+    </div>
+
     <!-- =====>script-file-link<===== -->
-     <script type="module" src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
+
 </html>
