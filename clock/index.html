@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <!-- =====> css <===== -->
+    <style>
+        .container{
+            background-color: #352f26;
+            width: 700px;
+            height: 500px;
+            border-radius: 2%;
+            margin-left: 20%;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .div{
+            border-radius: 4%;
+            width: 100px;
+            height: 100px;
+            background-color: #bec9d4;
+            transition: all 1s;
+        }
+        .div:hover{
+            box-shadow: 0px 0px 8px #4b6970;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+        <div class="container">
+            <div id="hour" class="div">
+
+            </div>
+
+            <div id="munite" class="div" >
+
+            </div>
+
+            <div id="second" class="div" >
+
+            </div>
+            <div id="ampm" class="div">
+                
+            </div>
+        </div>
+
+
+     <script>
+        
+
+        function final () {
+
+            // =====> catch-element <===== \\
+        const hour = document.getElementById('hour');
+        const munite = document.getElementById('munite');
+        const second = document.getElementById('second');
+        const amPm = document.getElementById('ampm');
+         
+        const h = new Date().getHours();
+        const m = new Date().getMinutes();
+        const s = new Date().getSeconds();
+
+
+            hour.innerHTML =`<p>${h}</p>`
+            munite.innerHTML =`<p>${m}</p>`
+            second.innerHTML = `<p> ${s}</p>`
+            amPm.innerHTML = `<p> pm </p>`
+
+            if(hour > 12) {
+             amPm.innerHTML = `<p> am </p>`
+            }
+          
+            setTimeout(() =>{
+                final()
+            }, 1000)
+        }
+        final()
+      
+     </script>
+</body>
+</html>

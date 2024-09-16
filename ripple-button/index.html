@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rappple button</title>
+
+    <style>
+        *{
+            margin:0% ;
+            box-sizing: border-box;
+        }
+        .div{
+            background-color: #14144d;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 2%;
+        }
+        .btn{
+            background-color: #b88181;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            font-size: large;
+            color: #f1f0f0;
+            position: relative;
+            overflow: hidden;
+            transition: all .2s;
+            cursor: pointer;
+        
+        }
+        .btn:hover{
+            color: #14144d;
+            outline: 4px solid #165194 ;
+        }
+        .text{
+            transition: all 0.5s ease-in-out;
+            z-index: 999;
+            position: relative;
+        }
+     
+        .btn::after{
+            content: '';
+            width: 0px;
+            height: 0px;
+            border-radius: 100%;
+            transition: all 0.2s ease-in-out;
+            background-color: #a1b7cc;
+            position: absolute;
+            top:var(--ripY);
+            left: var(--ripX);
+            transform:  translate(-50%, -50%);
+        }
+        .btn:hover::after{
+            width: 300px;
+            height: 300px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="div">
+
+        <button id="rapple" class="btn"> <span class="text">hover me</span></button>
+
+    </div>
+
+    <script src="/ripple-button/btn.js" ></script>
+</body>
+</html>

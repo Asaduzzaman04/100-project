@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ======css===== -->
+     <link rel="stylesheet" href="./style.css">
+    <title>calculatior</title>
+</head>
+<body>
+
+    <!-- main-container-start -->
+ <div class="container">
+        <!--======input-section======-->
+
+    <div class="input">
+        <input type="text" id="output" readonly >
+    </div>
+
+    <!-- =====button-section===== -->
+    <div class="btn">
+    
+      <div class="first_child">
+
+        <button onclick="calculate(`+`)">+</button>
+        <button onclick="calculate(`7`)">7</button>
+        <button onclick="calculate(`8`)">8</button>
+        <button onclick="calculate(`9`)">9</button>
+
+      </div>
+
+      <div class="second_child">
+
+        <button onclick="calculate(`-`)">-</button>
+        <button onclick="calculate(`4`)">4</button>
+        <button onclick="calculate(`5`)">5</button>
+        <button onclick="calculate(`6`)">6</button>
+
+      </div>
+
+      <div class="third_child">
+
+        <button onclick="calculate(`*`)">*</button>
+        <button onclick="calculate(`1`)">1</button>
+        <button onclick="calculate(`2`)">2</button>
+        <button onclick="calculate(`3`)">3</button>
+
+      </div>
+
+      <div class="forth_child">
+        
+        <button onclick="calculate(`/`)">/</button>
+        <button onclick="calculate(`0`)">0</button>
+        <button onclick="calculate(`.`)">.</button>
+        <button onclick="clearDisplay(``)">c</button>
+
+      </div>
+      
+      <div class="fifth_child">
+
+        <button  id="equal"  onclick="calculateToDisplay(``)"> = </button>
+
+      </div>
+    </div>
+</div>
+    <!-- main-container-end -->
+
+    <!-- ======script file ====== -->
+     <script src="./script.js"></script>
+</body>
+</html>
